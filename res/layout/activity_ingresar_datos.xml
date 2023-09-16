@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    android:backgroundTint="#93EC64"
+    tools:context=".ingresar_datos">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="verduras verdes"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="?android:attr/detailsElementBackground"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/idText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <EditText
+        android:id="@+id/txtCostos"
+        android:layout_width="194dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="428dp"
+        android:text="Costo verduras"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total por hectarea"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <EditText
+        android:id="@+id/txtHectareas"
+        android:layout_width="188dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="109dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#035707"
+        android:text="Calcular"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="109dp"
+        android:layout_height="67dp"
+        android:backgroundTint="#035707"
+        android:text="Limpiar"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="527dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
